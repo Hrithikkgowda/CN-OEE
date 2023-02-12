@@ -1,11 +1,9 @@
 class CaesarCipher
 {
-    
     public static StringBuffer encrypt(String text, int s)
     {
         StringBuffer result= new StringBuffer();
- 
-        for (int i=0; i<text.length(); i++)
+         for (int i=0; i<text.length(); i++)
         {
             if (Character.isUpperCase(text.charAt(i)))
             {
@@ -22,8 +20,6 @@ class CaesarCipher
         }
         return result;
     }
- 
-    
     public static void main(String[] args)
     {
         String text = "ATTACKATONCE";
